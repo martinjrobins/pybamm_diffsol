@@ -15,11 +15,11 @@ dynamic = ["version"]
 features = ["pyo3/extension-module"]
 dependencies = [
     "pybamm",
+    "numpy",
+    "scipy",
 ]
 
 [project.optional-dependencies]
 dev = [
     "pytest",
-    "numpy",
-    "scipy",
 ]
