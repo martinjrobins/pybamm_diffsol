@@ -12,13 +12,14 @@ classifiers = [
     "Programming Language :: Python :: Implementation :: PyPy",
 ]
 dynamic = ["version"]
-[tool.maturin]
-features = ["pyo3/extension-module"]
 dependencies = [
     "pybamm",
     "numpy",
     "scipy",
 ]
+
+[tool.maturin]
+features = ["pyo3/extension-module"]
 
 [project.optional-dependencies]
 dev = [
