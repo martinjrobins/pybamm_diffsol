@@ -31,9 +31,9 @@ jobs:
           - runner: ubuntu-22.04
             target: x86
             interpreter: '3.8 3.9 3.10 3.11 3.12 pypy3.9 pypy3.10'
-          - runner: ubuntu-22.04
-            target: aarch64
-            interpreter: '3.8 3.9 3.10 3.11 3.12 pypy3.9 pypy3.10'
+          #- runner: ubuntu-22.04
+          #  target: aarch64
+          #  interpreter: '3.8 3.9 3.10 3.11 3.12 pypy3.9 pypy3.10'
           #- runner: ubuntu-22.04
           #  target: armv7
           #- runner: ubuntu-22.04
@@ -127,8 +127,8 @@ jobs:
         platform:
           - runner: macos-13
             target: x86_64
-          - runner: macos-14
-            target: aarch64
+          #- runner: macos-14
+          #  target: aarch64
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -152,7 +152,7 @@ jobs:
           source .venv/bin/activate
           pip install pybamm_diffsol --find-links dist --force-reinstall
           pip install pytest
-      #    pytest
+          pytest
 
   sdist:
     runs-on: ubuntu-latest
