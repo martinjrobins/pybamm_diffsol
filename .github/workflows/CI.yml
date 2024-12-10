@@ -152,7 +152,7 @@ jobs:
           source .venv/bin/activate
           pip install pybamm_diffsol --find-links dist --force-reinstall
           pip install pytest
-          pytest
+          pytest -n 0
 
   sdist:
     runs-on: ubuntu-latest
