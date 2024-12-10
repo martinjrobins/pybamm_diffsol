@@ -1,6 +1,6 @@
 # PyBaMM_DiffSol
 
-This is a demonstration of how to use [DiffSol](https://github.com/martinjrobins/diffsol) to solve a PyBaMM model.
+This is a demonstration of how to use [DiffSol](https://github.com/martinjrobins/diffsol) to solve a [PyBaMM](https://github.com/pybamm-team/PyBaMM/) model.
 
 ## Installation
 
