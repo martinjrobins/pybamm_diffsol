@@ -133,7 +133,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: 3.12
+          python-version: 3.11
       - name: Build wheels
         uses: PyO3/maturin-action@v1
         with:
@@ -152,7 +152,7 @@ jobs:
           source .venv/bin/activate
           pip install pybamm_diffsol --find-links dist --force-reinstall
           pip install pytest
-          pytest -n 0
+          pytest
 
   sdist:
     runs-on: ubuntu-latest
